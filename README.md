@@ -10,8 +10,8 @@ $ npm i -S chatwork-api
 
 ### Usage
 2 main functions:
- * Message Builder: Utility for build chat message easier
- * Chatwork API caller: Call Chatwork API
+ * [Message Builder](#message-builder): Utility for build chat message easier
+ * [Chatwork API caller](#chatwork-apis): Call Chatwork API
 
 #### Message Builder
 Utility for build chat message easier.
@@ -178,14 +178,14 @@ Get [file information](http://developer.chatwork.com/ja/endpoint_rooms.html#GET-
 
 ### Examples
 ```javascript
-const API = require('chatwork-api', {
-  proxy: 'http://USER_NAME:USER_PASS@PROXY_URL:PROXY_PORT/'
-})
+const API = require('chatwork-api')
 const MessageBuilder = API.MessageBuilder
 const STATUS = API.CONST.STATUS
 
 // create new API instance with api token
-let api = new API('YOUR_TOKEN_HERE')
+let api = new API('YOUR_TOKEN_HERE', {
+  proxy: 'http://USER_NAME:USER_PASS@PROXY_URL:PROXY_PORT/'
+})
 
 // get my task
 api.myTasks('ASSIGNED_BY_ACCOUNT_ID', STATUS.DONE)
