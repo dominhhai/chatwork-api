@@ -1,0 +1,31 @@
+{
+  "name": "chatwork-api",
+  "version": "1.0.0",
+  "description": "Chatwork API for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard lib && mocha test --require should --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominhhai/chatwork-api.git"
+  },
+  "keywords": [
+    "Chatwork"
+  ],
+  "author": "Do Minh Hai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominhhai/chatwork-api/issues"
+  },
+  "homepage": "https://github.com/dominhhai/chatwork-api#readme",
+  "dependencies": {
+    "request": "^2.79.0",
+    "request-promise-native": "^1.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.1.2",
+    "standard": "^8.6.0"
+  }
+}
